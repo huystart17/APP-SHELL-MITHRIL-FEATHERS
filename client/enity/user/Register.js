@@ -1,10 +1,10 @@
 import m from 'mithril';
 import stream from 'mithril-stream'
 
-const Landing = {
+const Register = {
     oninit: v => {
-        v.state.text = stream('Goodboy-man-bybaaayee')
+        v.state.text = stream('Register')
     }
     , view: v => m('', v.state.text)
 };
-export default Landing;
+export default Register;

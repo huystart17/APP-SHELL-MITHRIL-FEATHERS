@@ -9,7 +9,7 @@
   ],
   "author": {
     "name": "Nguyễn Quang Huy",
-    "email": "huynguyenquang@enbac.com"
+    "email": "huyhuy17@gmail.com.com"
   },
   "contributors": [],
   "bugs": {},
@@ -25,7 +25,10 @@
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
-    "build-dev": "parcel watch ./client/index.js -d  ./public/dist/",
+    "dev": "npm run build-dev & nodemon ./src",
+    "production": "npm run build-production & nodemon ./src",
+    "build-dev": "webpack -w client/index.js -o public/dist/index.js --mode development --hot --cache",
+    "build-production": "webpack -w client/index.js -o public/dist/index.js --mode production --hot --cache",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
@@ -38,11 +41,14 @@
     "@feathersjs/express": "^1.2.1",
     "@feathersjs/feathers": "^3.1.4",
     "@feathersjs/socketio": "^3.2.0",
+    "babel-preset-env": "^1.6.1",
     "bss": "^1.1.5",
     "compression": "^1.7.2",
     "cors": "^2.8.4",
     "feathers-mongoose": "^6.1.0",
     "helmet": "^3.12.0",
+    "mithril": "^1.1.6",
+    "mithril-stream": "^1.1.0",
     "mongoose": "^5.0.11",
     "passport-auth0": "^0.6.1",
     "passport-facebook": "^2.1.1",
@@ -51,9 +57,16 @@
     "winston": "^2.4.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "eslint": "^4.19.1",
     "mocha": "^5.0.5",
     "request": "^2.85.0",
     "request-promise": "^4.2.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*",
+      "client/*"
+    ]
   }
 }

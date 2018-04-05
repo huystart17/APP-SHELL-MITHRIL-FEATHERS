@@ -1,9 +1,10 @@
-const m = require('mithril');
-const stream = require('mithril/stream');
-const b =require('bss')
+import m from 'mithril';
+import stream from 'mithril-stream'
+
 const Login = {
-    oninit: vnode => {
+    oninit: v => {
+        v.state.text = stream('Login 1 2 4 5 6 7 8 9 10 11 12 13 1212')
     }
-    , view: vnode => m('', 'Login')
+    , view: v => m('', v.state.text)
 };
-module.exports = Login;
+export default Login;
