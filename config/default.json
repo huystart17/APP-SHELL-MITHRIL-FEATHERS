@@ -1,0 +1,75 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "550bd3ba4e75d4e69f26143201315e311aa8cff16129e7a083ea254913102a29fa4f16df65a93763654f11535f23da326ea93d48d101ecc61019c1484355ebc44bd19d870fedb5ba887313b85ed26ecbca7b1e0c6e3731735da519c54e59d000945e636fa0fe58ecf20bb24657ad23b1f4474bf194a516bef8abd52a0b137db882e6528897aa411998e28297f0b8a5d3c45f8f7036c6c590882a18fb16794b0fe65aa4cd8ad574e26af6f40c15209897cc9ea9e250ee5e2e21756d88fc0302acb81aae9419edd0e7ae2b611eab970f9eeaf9c915da3117e642f635b94304bf10b86a6719dc892fa7f7d6997007a19fa079f9e6f2c6e48f9847aac6b9b28ea36b",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "auth0": {
+      "clientID": "your auth0 client id",
+      "clientSecret": "your auth0 client secret",
+      "successRedirect": "/",
+      "domain": "mydomain.auth0.com"
+    },
+    "google": {
+      "clientID": "your google client id",
+      "clientSecret": "your google client secret",
+      "successRedirect": "/",
+      "scope": [
+        "profile openid email"
+      ]
+    },
+    "facebook": {
+      "clientID": "your facebook client id",
+      "clientSecret": "your facebook client secret",
+      "successRedirect": "/",
+      "scope": [
+        "public_profile",
+        "email"
+      ],
+      "profileFields": [
+        "id",
+        "displayName",
+        "first_name",
+        "last_name",
+        "email",
+        "gender",
+        "profileUrl",
+        "birthday",
+        "picture",
+        "permissions"
+      ]
+    },
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/app"
+}
