@@ -62,7 +62,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6eb384c23e8a3e1cb9f3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6915e8155d4fa019e88e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -808,6 +808,18 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototy
 
 /***/ }),
 
+/***/ "./client/component/Header.js":
+/*!************************************!*\
+  !*** ./client/component/Header.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst menu = [\n    {\n        text: \"Trang chủ\",\n        url: \"/home\",\n        title: \"\",\n        icon: \"icon-home\"\n    },\n    {\n        text: \"Khám phá\",\n        url: \"/kham-pha\",\n        title: \"\",\n        icon: \"\"\n    },\n    {\n        text: \"Đặt chỗ\",\n        url: \"/dat-cho\",\n        title: \"\",\n        icon: \"\"\n    },\n    {\n        text: \"Tin tức\",\n        url: \"tin-tuc\",\n        title: \"\",\n        icon: \"\"\n    },\n    {\n        text: \"Khuyến mãi\",\n        url: \"khuyen-mai\",\n        title: \"\",\n        icon: \"\"\n    }\n];\n\nconst Header = {\n    oninit: v => {\n        v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()(\"Header\");\n        v.state.menu = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()(menu);\n    },\n    view: v =>\n        mithril__WEBPACK_IMPORTED_MODULE_0___default()(\n            \"\",\n            mithril__WEBPACK_IMPORTED_MODULE_0___default()(\n                \"ul.tab.tab-block\",\n                v.state.menu().map(item =>\n                    mithril__WEBPACK_IMPORTED_MODULE_0___default()(\n                        \"li.tab-item\",\n                        {\n                            key: item.url\n                        },\n                        item.text\n                    )\n                )\n            )\n        )\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n\n//# sourceURL=webpack:///./client/component/Header.js?");
+
+/***/ }),
+
 /***/ "./client/component/Landing.js":
 /*!*************************************!*\
   !*** ./client/component/Landing.js ***!
@@ -816,7 +828,19 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototy
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst Landing = {\n  oninit: v => {\n    v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('');\n  },\n  view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()('', v.state.text)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Landing);\n\n\n//# sourceURL=webpack:///./client/component/Landing.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout */ \"./client/component/Layout.js\");\n\n\n\n\nconst Landing = {\n  oninit: v => {\n    v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('');\n  },\n  view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()(_Layout__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Landing);\n\n\n//# sourceURL=webpack:///./client/component/Landing.js?");
+
+/***/ }),
+
+/***/ "./client/component/Layout.js":
+/*!************************************!*\
+  !*** ./client/component/Layout.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ \"./client/component/Header.js\");\n\n\n\n\nconst Layout = {\n    oninit: v => {\n        v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()(\"Layout\");\n    },\n    view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()(\"\", v.state.text, mithril__WEBPACK_IMPORTED_MODULE_0___default()(_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\n      , mithril__WEBPACK_IMPORTED_MODULE_0___default()(\"main.body\", \"body \")\n      , mithril__WEBPACK_IMPORTED_MODULE_0___default()(\"footer\"), v.children)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Layout);\n\n\n//# sourceURL=webpack:///./client/component/Layout.js?");
 
 /***/ }),
 
@@ -824,35 +848,35 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mith
 /*!**************************!*\
   !*** ./client/config.js ***!
   \**************************/
-/*! exports provided: DEFAULT_PATH */
+/*! exports provided: STATUS, STATUS_CODE, ENTITY, DEFAULT_PATH, HOME, API_URL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DEFAULT_PATH\", function() { return DEFAULT_PATH; });\nconst DEFAULT_PATH = '/'\n\n\n//# sourceURL=webpack:///./client/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"STATUS\", function() { return STATUS; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"STATUS_CODE\", function() { return STATUS_CODE; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ENTITY\", function() { return ENTITY; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DEFAULT_PATH\", function() { return DEFAULT_PATH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HOME\", function() { return HOME; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"API_URL\", function() { return API_URL; });\nconst STATUS = {\n    NONE: \"NONE\", //\n    DOING: \"DOING\",\n    DONE: \"DONE\",\n    ERROR: \"ERROR\"\n};\nconst STATUS_CODE = {\n    SUCCESS: 200,\n    NOT_FOUND: 404,\n    BAD_REQUEST: 400,\n    UNAUTHORIZED: 401,\n    ERROR: 500\n};\nconst ENTITY = {\n    USER: \"user\",\n  SELLER :'seller'\n};\nconst DEFAULT_PATH = \"/\";\nconst HOME = \"localhost:3030/\";\nconst API_URL = \"localhost:3030/api/\";\n\n\n//# sourceURL=webpack:///./client/config.js?");
 
 /***/ }),
 
-/***/ "./client/enity/user/Login.js":
-/*!************************************!*\
-  !*** ./client/enity/user/Login.js ***!
-  \************************************/
+/***/ "./client/entity/user/Login.js":
+/*!*************************************!*\
+  !*** ./client/entity/user/Login.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst Login = {\n  oninit: v => {\n    v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('');\n  },\n  view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()('', v.state.text)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Login);\n\n\n//# sourceURL=webpack:///./client/enity/user/Login.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst Login = {\n  oninit: v => {\n    v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('');\n  },\n  view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()('', v.state.text)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Login);\n\n\n//# sourceURL=webpack:///./client/entity/user/Login.js?");
 
 /***/ }),
 
-/***/ "./client/enity/user/Register.js":
-/*!***************************************!*\
-  !*** ./client/enity/user/Register.js ***!
-  \***************************************/
+/***/ "./client/entity/user/Register.js":
+/*!****************************************!*\
+  !*** ./client/entity/user/Register.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst Register = {\n    oninit: v => {\n        v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('Register')\n    }\n    , view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()('', v.state.text)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Register);\n\n\n//# sourceURL=webpack:///./client/enity/user/Register.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril-stream */ \"./node_modules/mithril-stream/stream.js\");\n/* harmony import */ var mithril_stream__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril_stream__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst Register = {\n    oninit: v => {\n        v.state.text = mithril_stream__WEBPACK_IMPORTED_MODULE_1___default()('Register')\n    }\n    , view: v => mithril__WEBPACK_IMPORTED_MODULE_0___default()('', v.state.text)\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Register);\n\n\n//# sourceURL=webpack:///./client/entity/user/Register.js?");
 
 /***/ }),
 
@@ -876,7 +900,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rou
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */ \"./client/config.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _component_Landing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/Landing */ \"./client/component/Landing.js\");\n/* harmony import */ var _enity_user_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./enity/user/Login */ \"./client/enity/user/Login.js\");\n/* harmony import */ var _enity_user_Register__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./enity/user/Register */ \"./client/enity/user/Register.js\");\n\n\n\n\n\nconst routes = {\n  [_config__WEBPACK_IMPORTED_MODULE_0__[\"DEFAULT_PATH\"]]: _component_Landing__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  '/login': _enity_user_Login__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  '/register': _enity_user_Register__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n  '/:any': { view: () => mithril__WEBPACK_IMPORTED_MODULE_1___default()('h4', 'Error 404!!') }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (routes);\n\n\n//# sourceURL=webpack:///./client/route.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */ \"./client/config.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mithril */ \"./node_modules/mithril/mithril.js\");\n/* harmony import */ var mithril__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mithril__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _component_Landing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/Landing */ \"./client/component/Landing.js\");\n/* harmony import */ var _entity_user_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./entity/user/Login */ \"./client/entity/user/Login.js\");\n/* harmony import */ var _entity_user_Register__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./entity/user/Register */ \"./client/entity/user/Register.js\");\n\n\n\n\n\nconst routes = {\n  [_config__WEBPACK_IMPORTED_MODULE_0__[\"DEFAULT_PATH\"]]: _component_Landing__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  '/login': _entity_user_Login__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  '/register': _entity_user_Register__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n  '/:any': { view: () => mithril__WEBPACK_IMPORTED_MODULE_1___default()('h4', 'Error 404!!') }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (routes);\n\n\n//# sourceURL=webpack:///./client/route.js?");
 
 /***/ }),
 

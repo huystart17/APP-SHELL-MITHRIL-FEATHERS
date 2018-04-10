@@ -5,6 +5,9 @@
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+Backend with feathers 
+FrontEnd with mithriljs, and meosis pattern 
+Css: spectre 
 
 ## Getting Started
 

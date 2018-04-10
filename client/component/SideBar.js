@@ -5,6 +5,7 @@ const Sidebar = {
   oninit: v => {
     v.state.text = stream('Sidebar');
   },
-  view: v => m('', v.state.text)
+  view: v => m(''
+    , v.state.text)
 };
 export default Sidebar;
