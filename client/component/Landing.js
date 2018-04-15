@@ -1,11 +1,9 @@
 import m from 'mithril';
 import stream from 'mithril-stream';
-import Layout from "./Layout";
-
+import Layout from './Layout';
+import App from '../app.js';
 const Landing = {
-  oninit: v => {
-    v.state.text = stream('');
-  },
-  view: v => m(Layout)
+    oninit: v => {},
+    view: v => [m('title', App.title), m(Layout, v.children)],
 };
 export default Landing;
